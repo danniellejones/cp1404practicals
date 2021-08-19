@@ -1,13 +1,19 @@
 """
-CP1404/CP5632 - Practical 1 - Dannielle Jones
+CP1404 | Prac_03 | Dannielle Jones
 Get score and determine score result.
 """
+import random
 
 
 def main():
+    # Get user to enter score and print result
     score = float(input("Enter score: "))
     result = determine_result(score)
     print(result)
+    # Get a random score and print the result
+    score = random.randint(0, 100)
+    result = determine_result(score)
+    print("Random Score: {} - Result: {}".format(score, result))
 
 
 def determine_result(score):
