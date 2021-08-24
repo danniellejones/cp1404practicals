@@ -12,6 +12,7 @@ def main():
 
 
 def print_subject_details(data):
+    """Print subject details (record) for each piece of data."""
     for record in data:
         print("{} is taught by {} and has {} students".format(record[0], record[1], record[2]))
 
