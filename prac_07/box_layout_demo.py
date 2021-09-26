@@ -1,3 +1,6 @@
+"""CP1404 | Prac_07 | Dannielle Jones
+Modified box layout demo program."""
+
 from kivy.app import App
 from kivy.lang import Builder
 
