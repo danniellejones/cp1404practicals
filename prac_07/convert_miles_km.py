@@ -28,29 +28,12 @@ class ConvertMilesToKm(App):
         value = self.get_validated_miles()
         result = value * ONE_MILE_IN_KM
         self.result_in_km = str(result)
-        # self.root.ids.output_label.text = str(result)
-
-    # def handle_conversion(self, value):
-    # """Convert miles to kilometres not using get_validated_miles function."""
-        # try:
-        #     result = float(value) * ONE_MILE_IN_KM
-        # except ValueError:
-        #     result = 0.0
-        # self.root.ids.output_label.text = str(result)
 
     def handle_increment(self, increment):
         """Reduce or increase input value."""
         increment_result = self.get_validated_miles() + increment
         self.root.ids.input_miles.text = str(increment_result)
         self.handle_conversion()
-
-    # def handle_increment(self, increment):
-    # """Reduce or increase input value not using get_validated_miles function."""
-        # try:
-        #     increment_result = float(self.root.ids.input_miles.text) + increment
-        # except ValueError:
-        #     increment_result = 0 + increment
-        # self.root.ids.input_miles.text = str(increment_result)
 
     def get_validated_miles(self):
         """Get text input from widget, convert to float or if error return 0."""

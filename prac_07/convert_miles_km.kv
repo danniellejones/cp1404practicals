@@ -7,7 +7,6 @@ BoxLayout:
             multiline: False
             text: ""
             on_text: app.handle_conversion()
-#            on_text: app.handle_conversion(input_miles.text)  # Only if get_validated_miles function is not used.
         BoxLayout:
             orientation: 'vertical'
             size_hint_x: 0.25
@@ -20,10 +19,8 @@ BoxLayout:
 #    Button:
 #        text: "Convert miles to km"
 #        on_press: app.handle_conversion()
-#        on_press: app.handle_conversion(input_miles.text)  # Only if get_validated_miles function is not used.
     Label:
         id: output_label
-#        text: ""
         text: app.result_in_km
         font_size: 48
         color: (1, 1, 0, 1)
