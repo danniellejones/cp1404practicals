@@ -81,14 +81,20 @@ def format_sentence(sentence):
     >>> format_sentence("It is my birthday") == "It is my birthday."
     True
     """
-    formatted_str = list(sentence)
-    for i, char in enumerate(formatted_str):
-        if i == 0:
-            formatted_str[i] = char.upper()
-        if formatted_str[-1] != ".":
-            formatted_str += "."
-    formatted_str = "".join(formatted_str)
-    return formatted_str
+    # formatted_str = list(sentence)
+    # for i, char in enumerate(formatted_str):
+    #     if i == 0:
+    #         formatted_str[i] = char.upper()
+    #     if formatted_str[-1] != ".":
+    #         formatted_str += "."
+    # formatted_str = "".join(formatted_str)
+    # return formatted_str
+
+    # Alternate solution
+    formatted_sentence = sentence.capitalise()
+    if formatted_sentence[-1] != ".":
+        formatted_sentence += "."
+    return formatted_sentence
 
 
 doctest.testmod()
