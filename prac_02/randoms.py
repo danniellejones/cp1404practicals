@@ -17,5 +17,5 @@ print(random.uniform(2.5, 5.5))  # line 3
 # A: Smallest: 2.5, Largest: 5.5
 
 # Produce a random number between 1 and 100 inclusive
-print(random.randint(1, 101))
+print(random.randint(1, 100))
 
